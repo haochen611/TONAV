@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9ff">
+  <meta name="description" content="TONAV: Task-Oriented Navigation and Action-Velocity Chunk Learning for Articulated Object Quadrupedal Mobile-Manipulation.">
+  <meta property="og:title" content="TONAV">
+  <meta property="og:description" content="Task-Oriented Navigation and Action-Velocity Chunk Learning for Articulated Object Quadrupedal Mobile-Manipulation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anonymoussdaui.github.io/TONAV/">
+  <meta property="og:image" content="https://anonymoussdaui.github.io/TONAV/static/images/web.png">
+  <title>TONAV</title>
+
+  <link rel="icon" type="image/png" sizes="64x64" href="static/images/favicon.png?v=20260811">
+  <link rel="apple-touch-icon" href="static/images/tonav-logo.png?v=20260811">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/index.css?v=20260821-1">
+  <script src="static/js/index.js?v=20260821-3" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="TONAV home">TONAV</a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#framework">Framework</a>
+        <a href="#experiments">Experiments</a>
+      </div>
+      <button class="works-trigger" type="button" aria-expanded="false" aria-controls="works-menu">
+        More works
+        <span aria-hidden="true">↗</span>
+      </button>
+      <div class="works-menu" id="works-menu" hidden>
+        <p class="works-label">Related projects</p>
+        <a href="https://haochen611.github.io/UFG/" target="_blank" rel="noopener noreferrer">
+          <span>UFG</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://siiuuuuuu.github.io/DexPIE/" target="_blank" rel="noopener noreferrer">
+          <span>DexPIE</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="page-shell hero-content">
+        <h1>
+          <span class="hero-title-line"><span class="hero-title-brand">TONAV:</span> Task-Oriented Navigation and Action-Velocity Chunk</span>
+          <span class="hero-title-line">Learning for Articulated Object Quadrupedal Mobile-Manipulation</span>
+        </h1>
+        <p class="eyebrow hero-title-submission">Anonymous Submission</p>
+        <p class="hero-summary">A unified framework that connects manipulation-ready navigation with smooth, stable continuous-contact interaction.</p>
+        <a class="hero-link" href="#experiments">Explore experiments <span aria-hidden="true">↓</span></a>
+        <div class="hero-resources" aria-label="Project resources">
+          <button class="resource-pill resource-pill--compact" type="button">
+            <img class="resource-icon resource-icon--arxiv" src="static/images/icons/arxiv.svg" alt="" aria-hidden="true">
+            <span>arXiv</span>
+          </button>
+          <button class="resource-pill resource-pill--compact" type="button">
+            <img class="resource-icon resource-icon--pdf" src="static/images/icons/file-pdf.svg" alt="" aria-hidden="true">
+            <span>PDF</span>
+          </button>
+          <button class="resource-pill" type="button">
+            <svg class="resource-icon resource-icon--github" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.8a9.35 9.35 0 0 0-2.96 18.22c.47.09.64-.2.64-.45v-1.8c-2.62.57-3.17-1.11-3.17-1.11-.43-1.09-1.05-1.38-1.05-1.38-.86-.59.07-.58.07-.58.95.07 1.45.98 1.45.98.85 1.45 2.22 1.03 2.76.79.09-.61.33-1.03.6-1.27-2.09-.24-4.29-1.05-4.29-4.65 0-1.03.37-1.87.97-2.53-.1-.24-.42-1.2.09-2.5 0 0 .79-.25 2.58.97A8.9 8.9 0 0 1 12 7.18c.8 0 1.58.1 2.32.31 1.79-1.22 2.58-.97 2.58-.97.51 1.3.19 2.26.09 2.5.6.66.97 1.5.97 2.53 0 3.61-2.2 4.4-4.3 4.64.34.29.64.87.64 1.76v2.62c0 .25.17.54.65.45A9.35 9.35 0 0 0 12 2.8Z"></path>
+            </svg>
+            <span>Code (Learning, Coming Soon)</span>
+          </button>
+          <button class="resource-pill" type="button">
+            <svg class="resource-icon resource-icon--github" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.8a9.35 9.35 0 0 0-2.96 18.22c.47.09.64-.2.64-.45v-1.8c-2.62.57-3.17-1.11-3.17-1.11-.43-1.09-1.05-1.38-1.05-1.38-.86-.59.07-.58.07-.58.95.07 1.45.98 1.45.98.85 1.45 2.22 1.03 2.76.79.09-.61.33-1.03.6-1.27-2.09-.24-4.29-1.05-4.29-4.65 0-1.03.37-1.87.97-2.53-.1-.24-.42-1.2.09-2.5 0 0 .79-.25 2.58.97A8.9 8.9 0 0 1 12 7.18c.8 0 1.58.1 2.32.31 1.79-1.22 2.58-.97 2.58-.97.51 1.3.19 2.26.09 2.5.6.66.97 1.5.97 2.53 0 3.61-2.2 4.4-4.3 4.64.34.29.64.87.64 1.76v2.62c0 .25.17.54.65.45A9.35 9.35 0 0 0 12 2.8Z"></path>
+            </svg>
+            <span>Code (Teleop)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section overview-section" id="overview">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p>Project overview</p>
+          <h2>From navigation to interaction</h2>
+        </div>
+        <figure class="media-card overview-figure">
+          <img src="static/images/web.png" alt="TONAV three-stage pipeline: coarse-grained trajectories, fine-grained trajectories, and imitation learning manipulation.">
+        </figure>
+        <div class="project-video-card">
+          <div class="project-video-copy">
+            <span>Overview video</span>
+            <p>Task-oriented approach, adaptive refinement, and articulated-object interaction.</p>
+          </div>
+          <video controls muted loop playsinline preload="metadata">
+            <source src="static/videos/banner_video.mp4?v=20260822-5" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section soft-section" id="abstract">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p>Paper</p>
+          <h2>Abstract</h2>
+        </div>
+        <div class="abstract-layout">
+          <div class="abstract-copy">
+            <p>Quadruped loco-manipulation requires two tightly coupled capabilities: reaching manipulation-ready configurations and maintaining stable contact throughout articulated-object interaction. However, existing methods often terminate navigation near the target, leaving a gap between reachability and manipulation readiness, while tracking lag, motion jitter, and contact instability limit continuous interaction.</p>
+            <p>To address these challenges, we present TONAV, a unified framework integrating task-oriented navigation with action-velocity chunk learning. First, we introduce a position-velocity-coupled teleoperation framework that explicitly captures motion dynamics to improve master-follower consistency and collect smooth, temporally consistent demonstrations. Next, task-oriented navigation leverages vision-language reasoning to decompose high-level instructions into executable subgoals and adaptively refine the robot base toward a manipulation-ready configuration.</p>
+            <p>Finally, action-velocity chunk learning jointly models joint positions and their temporal transitions under velocity supervision, enabling smooth and stable sustained-contact manipulation. Real-world experiments across diverse articulated-object tasks demonstrate that TONAV achieves higher success rates in both task-oriented navigation and complete loco-manipulation, mitigating the navigation-manipulation gap and improving continuous-contact interaction.</p>
+          </div>
+          <figure class="paper-figure">
+            <a class="figure-link" href="static/pdfs/fig1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Figure 1 as a high-resolution PDF">
+              <img src="static/images/fig1-hd.png" alt="Illustration of articulated-object quadrupedal loco-manipulation and the effect of position-velocity coupling." loading="lazy">
+            </a>
+            <figcaption>Paper overview and Fig. 1.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="framework">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p>Method</p>
+          <h2>Framework</h2>
+        </div>
+        <figure class="media-card framework-figure">
+          <a class="figure-link" href="static/pdfs/pipeline.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the TONAV pipeline as a high-resolution PDF">
+            <img src="static/images/pipeline-hd.png" alt="TONAV framework integrating perception-planning chain-of-thought, adaptive approach, and action-velocity chunk learning." loading="lazy">
+          </a>
+          <figcaption>TONAV integrates task-oriented navigation, adaptive approach, and action-velocity chunk learning in a unified loco-manipulation pipeline.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section experiment-section" id="experiments">
+      <div class="page-shell">
+        <div class="section-heading experiment-heading">
+          <p>Real-world evaluation</p>
+          <h2>Experiments</h2>
+        </div>
+
+        <section class="teleop-comparison" aria-labelledby="teleop-comparison-title">
+          <div class="teleop-comparison-heading">
+            <p>Teleoperation study</p>
+            <h3 id="teleop-comparison-title">High-Frequency Teleoperation Comparison</h3>
+          </div>
+          <div class="teleop-comparison-grid">
+            <article class="teleop-comparison-card">
+              <div class="teleop-comparison-media">
+                <video controls muted loop playsinline preload="metadata" poster="static/videos/experiments/high-frequency-teleoperation/position-only.jpg?v=20260821-2" aria-label="Position-only high-frequency teleoperation demonstration">
+                  <source src="static/videos/experiments/high-frequency-teleoperation/position-only.mp4?v=20260821-2" type="video/mp4">
+                </video>
+              </div>
+              <p class="teleop-comparison-label">Position-only</p>
+            </article>
+            <article class="teleop-comparison-card teleop-comparison-card--ours">
+              <div class="teleop-comparison-media">
+                <video controls muted loop playsinline preload="metadata" poster="static/videos/experiments/high-frequency-teleoperation/position-velocity-coupled.jpg?v=20260821-2" aria-label="Position-velocity-coupled high-frequency teleoperation demonstration">
+                  <source src="static/videos/experiments/high-frequency-teleoperation/position-velocity-coupled.mp4?v=20260821-2" type="video/mp4">
+                </video>
+              </div>
+              <p class="teleop-comparison-label">Position–velocity-coupled <span>(Ours)</span></p>
+            </article>
+          </div>
+        </section>
+
+        <div class="experiment-browser" data-experiment-browser>
+          <div class="experiment-tabs" role="tablist" aria-label="Experiment category">
+            <button type="button" role="tab" aria-selected="false" data-mode="endtoend">End-to-end</button>
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-mode="comparison">Comparison</button>
+            <button type="button" role="tab" aria-selected="false" data-mode="teledata">Teleoperation data</button>
+          </div>
+
+          <div class="experiment-controls" aria-label="Experiment task">
+            <span class="control-label">Task</span>
+            <div class="segmented-control" role="group" aria-label="Select a task">
+              <button class="is-active" type="button" data-task="close-drawer">Close drawer</button>
+              <button type="button" data-task="lower-toilet-lid">Lower toilet lid</button>
+              <button type="button" data-task="turn-on-lamp">Turn on lamp</button>
+            </div>
+          </div>
+
+          <section class="experiment-panel" role="tabpanel" data-panel="endtoend" hidden>
+            <div class="panel-topline">
+              <div>
+                <p class="panel-kicker">Complete pipeline</p>
+                <h3 data-endtoend-title>Close drawer</h3>
+              </div>
+            </div>
+            <article class="video-card video-card-wide">
+              <div class="video-frame">
+                <video controls muted loop playsinline preload="metadata" data-endtoend-video>
+                  <source src="static/videos/experiments/endtoend/close-drawer.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="video-meta">
+                <span>End-to-end</span>
+                <strong data-endtoend-caption>Close drawer</strong>
+              </div>
+            </article>
+          </section>
+
+          <section class="experiment-panel is-active" role="tabpanel" data-panel="comparison">
+            <div class="panel-topline comparison-topline">
+              <div>
+                <p class="panel-kicker">P–V control comparison</p>
+                <h3 data-comparison-title>Close drawer</h3>
+              </div>
+              <div class="method-control" role="group" aria-label="Select comparison method">
+                <button class="is-active" type="button" data-method="tonav">TONAV</button>
+                <button type="button" data-method="dp">DP</button>
+                <button type="button" data-method="act">ACT</button>
+              </div>
+            </div>
+
+            <div class="comparison-grid">
+              <article class="video-card">
+                <div class="video-frame">
+                  <video controls muted loop playsinline preload="metadata" data-comparison-video="with-pv">
+                    <source src="static/videos/experiments/comparison/close-drawer/tonav-with-pv.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-meta">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <strong>With P–V control</strong>
+                  <small data-comparison-caption="with-pv">TONAV · Close drawer</small>
+                </div>
+              </article>
+              <article class="video-card">
+                <div class="video-frame">
+                  <video controls muted loop playsinline preload="metadata" data-comparison-video="without-pv">
+                    <source src="static/videos/experiments/comparison/close-drawer/tonav-without-pv.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-meta">
+                  <span class="status-dot status-dot-muted" aria-hidden="true"></span>
+                  <strong>Without P–V control</strong>
+                  <small data-comparison-caption="without-pv">TONAV · Close drawer</small>
+                </div>
+              </article>
+            </div>
+
+            <div class="sync-bar">
+              <button class="sync-button" type="button" data-sync-toggle>
+                <span data-sync-symbol aria-hidden="true">▶</span>
+                <span data-sync-label>Play both</span>
+              </button>
+              <input class="sync-range" type="range" min="0" max="1000" value="0" aria-label="Synchronized video position" data-sync-range>
+              <span class="sync-time" data-sync-time>00:00</span>
+            </div>
+
+            <figure class="qualitative-figure">
+              <a class="figure-link" href="static/pdfs/comparison.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the qualitative comparison as a high-resolution PDF">
+                <img src="static/images/comparison-hd.png" alt="Qualitative trajectory comparison between StreamVLN, InternNav, and TONAV." loading="lazy">
+              </a>
+            </figure>
+          </section>
+
+          <section class="experiment-panel" role="tabpanel" data-panel="teledata" hidden>
+            <div class="teledata-block teledata-block-pv">
+              <div class="panel-topline teledata-topline">
+                <div>
+                  <p class="panel-kicker">P–V Teleoperation</p>
+                  <h3 data-teledata-title>Close drawer</h3>
+                </div>
+                <div class="method-control" role="group" aria-label="Select teleoperation navigation setting">
+                  <button class="is-active" type="button" data-teledata-method="tonav">TONAV</button>
+                  <button type="button" data-teledata-method="internnav">InternNav</button>
+                  <button type="button" data-teledata-method="streamvln">StreamVLN</button>
+                </div>
+              </div>
+              <article class="video-card teledata-card">
+                <div class="video-frame">
+                  <video controls muted loop playsinline preload="metadata" data-teledata-video>
+                    <source src="static/videos/experiments/teledata/close-drawer/tonav.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-meta">
+                  <span>Full-resolution demonstration</span>
+                  <strong data-teledata-caption>TONAV · Close drawer</strong>
+                </div>
+              </article>
+            </div>
+
+            <div class="teledata-block navigation-ablation">
+              <div class="ablation-heading">
+                <div>
+                  <p class="panel-kicker">Navigation Ablation</p>
+                  <h3 data-ablation-title>Close drawer</h3>
+                </div>
+              </div>
+
+              <div class="ablation-grid" aria-label="Navigation instruction decomposition comparison">
+                <article class="ablation-card" data-ablation-card="doubao-without-ppcot">
+                  <header>
+                    <div>
+                      <strong>Doubao-Seed-2.1-Pro</strong>
+                      <span>w/o PP-CoT</span>
+                    </div>
+                  </header>
+                  <video controls muted playsinline preload="none" data-ablation-video="doubao-without-ppcot">
+                    <source src="static/videos/experiments/teledata/navigation-ablation/close-drawer/doubao-without-ppcot/run-1.mp4" type="video/mp4">
+                  </video>
+                </article>
+
+                <article class="ablation-card" data-ablation-card="qwen-without-ppcot">
+                  <header>
+                    <div>
+                      <strong>Qwen-3.7-Max</strong>
+                      <span>w/o PP-CoT</span>
+                    </div>
+                  </header>
+                  <video controls muted playsinline preload="none" data-ablation-video="qwen-without-ppcot">
+                    <source src="static/videos/experiments/teledata/navigation-ablation/close-drawer/qwen-without-ppcot/run-1.mp4" type="video/mp4">
+                  </video>
+                </article>
+
+                <article class="ablation-card" data-ablation-card="doubao-ppcot">
+                  <header>
+                    <div><strong>Doubao-Seed-2.1-Pro</strong></div>
+                  </header>
+                  <video controls muted playsinline preload="none" data-ablation-video="doubao-ppcot">
+                    <source src="static/videos/experiments/teledata/navigation-ablation/close-drawer/doubao-ppcot/run-1.mp4" type="video/mp4">
+                  </video>
+                </article>
+
+                <article class="ablation-card ablation-card-ours" data-ablation-card="qwen-ours">
+                  <header>
+                    <div>
+                      <strong>Qwen-3.7-Max</strong>
+                      <span>Ours</span>
+                    </div>
+                  </header>
+                  <video controls muted playsinline preload="none" data-ablation-video="qwen-ours">
+                    <source src="static/videos/experiments/teledata/navigation-ablation/close-drawer/qwen-ours/run-1.mp4" type="video/mp4">
+                  </video>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="experiment-notes" aria-label="Experiment category descriptions">
+          <div class="note-row">
+            <span class="note-index">01</span>
+            <strong>End-to-end:</strong>
+            <p>Complete mobile manipulation experiments, from navigation to final object interaction.</p>
+          </div>
+          <div class="note-row">
+            <span class="note-index">02</span>
+            <strong>Comparison:</strong>
+            <p>Comparison of different manipulation methods from the same initial configurations, using a single navigation run to reach the manipulation-ready region for multiple manipulation trials.</p>
+          </div>
+          <div class="note-row note-row--teledata">
+            <span class="note-index">03</span>
+            <div class="teledata-note-copy">
+              <strong>Teleoperation Data:</strong>
+              <ol class="teledata-note-list">
+                <li><strong>P–V Teleoperation Validation:</strong> Comparison of different navigation methods in reaching manipulation-ready configurations, validated through P–V teleoperation.</li>
+                <li><strong>Navigation Ablation:</strong> Ablation of PP-CoT in TONAV and comparison of different LLMs (Doubao-Seed-2.1-Pro and Qwen-3.7-Max (Ours)) for manipulation-oriented navigation.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section soft-section citation-section" id="citation">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p>Reference</p>
+          <h2>BibTeX</h2>
+        </div>
+        <div class="citation-pending">
+          <span aria-hidden="true">i</span>
+          <p>BibTeX metadata has not been provided.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page-shell footer-inner">
+      <p>TONAV · Anonymous Submission</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
